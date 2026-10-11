@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="headBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#312E81" />
+    </linearGradient>
+    <linearGradient id="headGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(79, 70, 229, 0.25)" />
+      <stop offset="100%" stop-color="rgba(139, 92, 246, 0.15)" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Backdrop -->
+  <rect width="600" height="360" fill="url(#headBg)" />
+  
+  <!-- Modern UI Mockup Browser Frame -->
+  <g transform="translate(40, 30)">
+    <rect width="520" height="300" rx="16" fill="rgba(15, 23, 42, 0.88)" stroke="rgba(255,255,255,0.18)" stroke-width="2" />
+    
+    <!-- Browser Top Bar -->
+    <rect width="520" height="36" rx="16" fill="rgba(255, 255, 255, 0.05)" />
+    <circle cx="24" cy="18" r="5" fill="#EF4444" />
+    <circle cx="40" cy="18" r="5" fill="#F59E0B" />
+    <circle cx="56" cy="18" r="5" fill="#10B981" />
+    
+    <!-- Browser URL Bar -->
+    <rect x="85" y="8" width="350" height="20" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" />
+    <text x="260" y="22" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">headway-b2b.internal &bull; Enterprise Wholesale Hub</text>
+
+    <!-- Inside Content -->
+    <!-- Wholesale Top Bar -->
+    <rect x="25" y="55" width="470" height="50" rx="10" fill="url(#headGlass)" stroke="rgba(79, 70, 229, 0.3)" />
+    <text x="45" y="85" font-family="'Poppins', sans-serif" font-size="16" font-weight="bold" fill="#A5B4FC">HEADWAY B2B PLATFORM</text>
+    <rect x="360" y="67" width="115" height="26" rx="6" fill="#4F46E5" />
+    <text x="417" y="84" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Bulk Catalog &rarr;</text>
+    
+    <!-- Product Grid Mockup -->
+    <!-- Card 1 -->
+    <rect x="25" y="120" width="145" height="150" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+    <rect x="35" y="130" width="125" height="65" rx="6" fill="rgba(79, 70, 229, 0.15)" />
+    <text x="40" y="215" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Industrial Motors</text>
+    <text x="40" y="235" font-family="'Poppins', sans-serif" font-size="13" font-weight="bold" fill="#67E8F9">&#36;1,450 / 50x</text>
+    <rect x="40" y="245" width="60" height="15" rx="4" fill="rgba(16, 185, 129, 0.2)" />
+    <text x="70" y="256" font-family="'Inter', sans-serif" font-size="9" fill="#34D399" text-anchor="middle">In Stock</text>
+
+    <!-- Card 2 -->
+    <rect x="187" y="120" width="145" height="150" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+    <rect x="197" y="130" width="125" height="65" rx="6" fill="rgba(6, 182, 212, 0.15)" />
+    <text x="202" y="215" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Precision Gears</text>
+    <text x="202" y="235" font-family="'Poppins', sans-serif" font-size="13" font-weight="bold" fill="#67E8F9">&#36;890 / 100x</text>
+    <rect x="202" y="245" width="60" height="15" rx="4" fill="rgba(16, 185, 129, 0.2)" />
+    <text x="232" y="256" font-family="'Inter', sans-serif" font-size="9" fill="#34D399" text-anchor="middle">In Stock</text>
+
+    <!-- Card 3 -->
+    <rect x="350" y="120" width="145" height="150" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+    <rect x="360" y="130" width="125" height="65" rx="6" fill="rgba(244, 63, 94, 0.15)" />
+    <text x="365" y="215" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Control Relays</text>
+    <text x="365" y="235" font-family="'Poppins', sans-serif" font-size="13" font-weight="bold" fill="#67E8F9">&#36;2,100 / 250x</text>
+    <rect x="365" y="245" width="75" height="15" rx="4" fill="rgba(245, 158, 11, 0.2)" />
+    <text x="402" y="256" font-family="'Inter', sans-serif" font-size="9" fill="#FBBF24" text-anchor="middle">Bulk Tier 1</text>
+  </g>
+</svg>

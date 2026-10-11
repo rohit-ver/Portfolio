@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kartBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#065F46" />
+    </linearGradient>
+    <linearGradient id="kartGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(16, 185, 129, 0.25)" />
+      <stop offset="100%" stop-color="rgba(6, 182, 212, 0.15)" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Backdrop -->
+  <rect width="600" height="360" fill="url(#kartBg)" />
+  
+  <!-- Modern UI Mockup Browser Frame -->
+  <g transform="translate(40, 30)">
+    <rect width="520" height="300" rx="16" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.18)" stroke-width="2" />
+    
+    <!-- Browser Top Bar -->
+    <rect width="520" height="36" rx="16" fill="rgba(255, 255, 255, 0.05)" />
+    <circle cx="24" cy="18" r="5" fill="#EF4444" />
+    <circle cx="40" cy="18" r="5" fill="#F59E0B" />
+    <circle cx="56" cy="18" r="5" fill="#10B981" />
+    
+    <!-- Browser URL Bar -->
+    <rect x="85" y="8" width="350" height="20" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" />
+    <text x="260" y="22" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">kartavyya.com &bull; Cleanliness Drive</text>
+
+    <!-- Inside Content -->
+    <!-- Hero Banner Mockup -->
+    <rect x="25" y="55" width="470" height="110" rx="12" fill="url(#kartGlass)" stroke="rgba(16, 185, 129, 0.3)" />
+    <text x="45" y="90" font-family="'Poppins', sans-serif" font-size="18" font-weight="bold" fill="#34D399">Kartavyya Initiative</text>
+    <text x="45" y="112" font-family="'Inter', sans-serif" font-size="12" fill="#E2E8F0">Clean Cities, United Volunteers &amp; Community Drives</text>
+    <rect x="45" y="128" width="105" height="24" rx="12" fill="#10B981" />
+    <text x="97" y="144" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Join Drive &rarr;</text>
+    
+    <!-- 3 Mini Metric Cards -->
+    <rect x="25" y="180" width="145" height="90" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+    <text x="40" y="210" font-family="'Poppins', sans-serif" font-size="20" font-weight="bold" fill="#34D399">500+</text>
+    <text x="40" y="235" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">Active Volunteers</text>
+
+    <rect x="187" y="180" width="145" height="90" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+    <text x="202" y="210" font-family="'Poppins', sans-serif" font-size="20" font-weight="bold" fill="#67E8F9">25+</text>
+    <text x="202" y="235" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">City Clean Drives</text>
+
+    <rect x="350" y="180" width="145" height="90" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+    <text x="365" y="210" font-family="'Poppins', sans-serif" font-size="20" font-weight="bold" fill="#FBBF24">12 T</text>
+    <text x="365" y="235" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">Waste Recycled</text>
+  </g>
+</svg>
