@@ -15,16 +15,23 @@ class ResumeController extends Controller
     {
         $resume = Resume::active();
 
-        if (!$resume || !Storage::disk('public')->exists($resume->file_path)) {
-            return redirect()->back()->with('error', 'The resume file is currently being updated. Please check back shortly or contact me directly.');
+        // 1. Admin panel se upload hua resume (agar DB me hai aur file maujood hai)
+        if ($resume && Storage::disk('public')->exists($resume->file_path)) {
+            $resume->increment('download_count');
+
+            return response()->download(Storage::disk('public')->path($resume->file_path), 'Rohit_Verma_Resume.pdf', [
+                'Content-Type' => 'application/pdf',
+            ]);
         }
 
-        // Increment download counter
-        $resume->increment('download_count');
+        // 2. Fallback: git me rakha hua resume (public/files/resume.pdf)
+        $fallback = public_path('files/resume.pdf');
+        if (file_exists($fallback)) {
+            return response()->download($fallback, 'Rohit_Verma_Resume.pdf', [
+                'Content-Type' => 'application/pdf',
+            ]);
+        }
 
-        $downloadFilename = 'Rohit_Verma_Resume.pdf';
-        return Storage::disk('public')->download($resume->file_path, $downloadFilename, [
-            'Content-Type' => 'application/pdf',
-        ]);
+        return redirect()->back()->with('error', 'The resume file is currently being updated. Please check back shortly or contact me directly.');
     }
 }
